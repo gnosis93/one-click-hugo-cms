@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/angasa/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/genesis/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/index.html</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/marmoset/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/nat-nat/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/nellax/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/senja/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url><url>
+    <loc>http://example.org/work/</loc>
+    <lastmod>2021-10-09T17:19:16+02:00</lastmod>
+  </url>
+</urlset>

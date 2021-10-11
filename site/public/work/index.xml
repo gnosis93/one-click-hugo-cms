@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Works on Webective</title>
+    <link>http://example.org/work/</link>
+    <description>Recent content in Works on Webective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Oct 2021 17:19:16 +0200</lastBuildDate><atom:link href="http://example.org/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angasa</title>
+      <link>http://example.org/work/angasa/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/angasa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gebesus</title>
+      <link>http://example.org/work/genesis/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/genesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marmoset</title>
+      <link>http://example.org/work/marmoset/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/marmoset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nat-nat</title>
+      <link>http://example.org/work/nat-nat/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/nat-nat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nellax</title>
+      <link>http://example.org/work/nellax/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/nellax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Senja</title>
+      <link>http://example.org/work/senja/</link>
+      <pubDate>Sat, 09 Oct 2021 17:19:16 +0200</pubDate>
+      
+      <guid>http://example.org/work/senja/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

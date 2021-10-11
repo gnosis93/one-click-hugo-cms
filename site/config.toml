@@ -1,9 +1,24 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Homepage"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Webective'
+disableKinds = ["taxonomy", "taxonomyTerm"]
+theme = 'webective'
+[menu]
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  pre = ''
+  url = '/'
+  weight = 1
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  pre = ''
+  url = '/about/'
+  weight = 2
+[[menu.main]]
+  identifier = 'work'
+  name = 'Work'
+  pre = ''
+  url = '/work/'
+  weight = 3

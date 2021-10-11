@@ -1,0 +1,115 @@
+
+{{ define "main" }}
+
+<link rel="stylesheet" href="/css/plugin/jquery.pagepiling.min.css">
+
+<!-- Side Navbar -->
+<nav class="work-nav">
+    <div class="table">
+        <div class="valign">
+            {{ range .Pages }}
+
+                <a class="item-menu active" data-menuanchor="{{.Title}}" href="#{{.Title}}">
+                    <span class="text">{{.Title}}</span>
+                </a>
+
+            {{end}}
+
+          
+        </div>
+    </div>
+</nav>
+
+<!-- Work List -->
+<div class="pagepiling">
+
+    {{ range .Pages }}
+        <!-- Work 01 -->
+        <div class="section work-1">
+            <div class="layer">
+                <!-- background -->
+                <div class="prx bg-work-1" id="--1">
+                    <!-- Work Image -->
+                    <div class="img-obj-1" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="{{.Permalink}}">
+                                <h3 id="zoom-fade">{{.Title}}</h3>
+                                <p class="sub">{{.Params.services}}</p>
+                                <h4 class="btn-detail">Work detail</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
+    
+
+</div>
+
+<!-- logo -->
+<div class="logo animated fadeInDown">
+    <a href="index.html">Embun-logo</a>
+</div>
+
+<!-- logo mobile -->
+<div class="m-logo animated fadeInDown">
+    <a href="index.html"><img src="img/mobile-logo.png" alt="m-logo"></a>
+</div>
+<!-- mobile navbar -->
+<a class="m-navbar-left animated fadeInDown" href="about.html">
+    <span>ABOUT US</span>
+</a>
+<a class="m-navbar-right animated fadeInDown" href="work.html">
+    <span>PORTFOLIO</span>
+</a>
+
+<!-- Social Media -->
+<div class="social">
+    <ul>
+        <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-medium"></i></a>
+        </li>
+    </ul>
+</div>
+
+<!-- Menu Toggle -->
+<div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+{{ partial "header/site-nav.html" . }}
+
+
+<!-- Bottom Navigation Mobile-->
+<a class="bottom-nav-m">Next project</a>
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+
+
+<!-- Optional JavaScript -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+<!-- Plugin JS -->
+<script src="/js/plugin-work.js"></script>
+<script src="/js/work.js"></script>
+{{ end }}
+

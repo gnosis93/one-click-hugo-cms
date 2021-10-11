@@ -1,0 +1,200 @@
+
+{{ define "main" }}
+
+<!-- <h1>{{ .Title }}</h1> -->
+
+<!-- main-background -->
+<div class="main-detail-bg">
+    <!-- mouse animation -->
+    <a href="#">
+        <div id="mouse-scroll">
+            <div class="mouse">
+                <div class="mouse-in"></div>
+            </div>
+            <div>
+                <span class="down-arrow-1"></span> <span class="down-arrow-2"></span> <span class="down-arrow-3"></span>
+            </div>
+        </div>
+    </a>
+</div>
+
+<!-- Content -->
+<div class="table">
+    <div class="valign">
+        <div class="container">
+            <div class="row">
+                <!-- title -->
+                <div class="col-md-12">
+                    <div class="title-about" data-aos-once="true" data-aos="fade-up" data-aos-delay="200">
+                        {{.Params.top_section  | safeHTML }} 
+
+                        <!-- {{ with .Site.GetPage "/about/top-section" }}{{ .Content }}{{ end }} -->
+                        <div class="dash"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white mt-full">
+    <div class="container">
+        <!-- Who we are -->
+        <div class="row m-each" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 mt-30">
+                <h3>Who we are</h3>
+            </div>
+            <div class="col-lg-8 mt-30">
+                <p>
+                    {{.Params.who_we_are  | safeHTML }} 
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Client -->
+<div class="bg-main">
+    <div class="container">
+        <div class="row">
+            <!-- Clients -->
+            <div class="col-md-12 col-lg-8 offset-lg-2 text-center m-each">
+                <h2 data-aos-once="true" data-aos="fade-up" data-aos-delay="100">Our awesome clients</h2>
+            </div>
+            
+           
+
+            {{ range .Params.clients_logos}}
+                <div class="col-6 col-md-3 mt-30">
+                    <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="50">
+                        <img src="{{.}}" alt="1">
+                    </div>
+                </div>
+            {{end}}
+
+            <!-- <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+                    <img src="/img/about/client-2.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="150">
+                    <img src="/img/about/client-3.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/img/about/client-4.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="250">
+                    <img src="/img/about/client-5.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/img/about/client-6.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="350">
+                    <img src="/img/about/client-2.png" alt="1">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mt-30">
+                <div class="client" data-aos-once="true" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/img/about/client-3.png" alt="1">
+                </div>
+            </div> -->
+
+            <!-- Email to -->
+            <div class="col-md-12 col-lg-8 offset-lg-2 text-center m-each">
+                <div class="email" data-aos-once="true" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Ready to inject style into your next project ?</h2>
+                    <a id="zoom-fade" href="mailto:{{ .Params.email}}">{{ .Params.email}}</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Address -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-30">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Say Hello</h4>
+                    <p>{{ .Params.email}}</p>
+                </div>
+                <div class="col-md-4 mt-30">
+                    <div class="address">
+                        <i class="fas fa-phone"></i>
+                        <h4>Telephone</h4>
+                        <p>{{ .Params.telephone}}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-30">
+                    <div class="address">
+                        <i class="fas fa-map-marker"></i>
+                        <h4>Address</h4>
+                        <p>{{ .Params.address}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- logo -->
+<div class="logo animated fadeInDown">
+    <a href="index.html">Embun-logo</a>
+</div>
+
+<!-- logo mobile -->
+<div class="m-logo animated fadeInDown">
+    <a href="index.html"><img src="/img/mobile-logo.png" alt="m-logo"></a>
+</div>
+
+<!-- mobile navbar -->
+<a class="m-navbar-left animated fadeInDown" href="about.html">
+    <span>ABOUT US</span>
+</a>
+<a class="m-navbar-right animated fadeInDown" href="work.html">
+    <span>PORTFOLIO</span>
+</a>
+
+<!-- Social Media -->
+<div class="social animated fadeInUp">
+    <ul>
+        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-medium"></i></a></li>
+    </ul>
+</div>
+
+<!-- Navbar Toggle -->
+<div class="button_container animated fadeInDown" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+{{ partial "header/site-nav.html" . }}
+
+<!-- Cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<!-- Plugin JS -->
+<script src="/js/plugin.js"></script>
+<script src="/js/custom.js"></script>
+{{ end }}
+
